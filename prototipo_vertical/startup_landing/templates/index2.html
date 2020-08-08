@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>SoloMedicamentos - Encuentra el mejor precio de tus medicamentos y recíbelos en la puerta de tu casa</title>
+
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="{{ url_for('static', filename='fonts/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
+
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+		
+		<!--[if lt IE 9]>
+		<script src="{{ url_for('static', filename='js/ie-support/html5.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/ie-support/respond.js') }}"></script>
+		<![endif]-->
+
+	</head>
+
+
+	<body>
+		
+		<div class="site-content">
+			<header class="hero" data-bg-image="static/images/banner.jpg">
+				<div class="container">
+					<a href="#" class="branding"><img src="static\images/logo_sm.png" alt="Start-up"></a>
+					<div class="hero-content">
+						<h1>Encuentra el medicamento que <strong>necesitas</strong> <br><strong>al mejor precio</strong></h1>
+					</div>
+					<!--
+					<div class="searchBar">
+						<p>Ingrese el nombre del medicamento</p>
+						<input type="search" id="med_name">
+						<button class="btn-search" id="searchButton"> Buscar </button>
+					  </div>
+					
+					  </div>
+					-->
+					<form class="subscribe-form">
+						<input type="text" placeholder="Ingrese el medicamento que deseas buscar"  id="newSearchBar">
+						<input type="submit" value="Buscar" id="submitButton">
+					</form>
+					<div>
+						<table id="results" class="table">
+						  
+						</table>
+						<div class="searchBar" id="Error"></div>
+					  </div>
+					<span class="scrolldown">Desliza hacia abajo para ver más <br><i class="fa fa-chevron-down"></i></span>
+				</div>
+			</header> <!-- hero -->
+
+			<main class="main-content">
+				<div class="fullwidth-block">
+					<div class="container">
+						<h2 class="section-title">homepage</h2>
+						<small class="section-subtitle">SoloMedicamentos</small>
+
+						<img src="static/images/devices.png" alt="" class="figure">
+					</div>
+				</div> <!-- .fullwidth-block -->
+
+				<div class="fullwidth-block">
+					<div class="container">
+						<h2 class="section-title">Características de nuestro proyecto</h2>
+						<small class="section-subtitle">SoloMedicamentos</small>
+
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<div class="feature">
+									<div class="feature-icon"><img src="static/images/icon-pie-chart.png" alt="" class="icon"></div>
+									<h3 class="feature-title">Fácil de usar</h3>
+									<p>Ingresa el medicamento que necesites y nosotros nos preocuparemos de entregarte la información de cada farmacia que podamos.</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="feature">
+									<div class="feature-icon"><img src="static/images/icon-mobile.png" alt="" class="icon"></div>
+									<h3 class="feature-title">Compatible con smartphone</h3>
+									<p>Nuestra página es soportada por navegadores web de Android e iOS.</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="feature">
+									<div class="feature-icon"><img src="static/images/icon-piggy-bank.png" alt="" class="icon"></div>
+									<h3 class="feature-title">Conveniente para</h3>
+									<p>Actualizamos constantemente nuestra base de datos para que las consultas sean más expeditas.</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="feature">
+									<div class="feature-icon"><img src="static/images/icon-lock.png" alt="" class="icon"></div>
+									<h3 class="feature-title">Entrega confiable</h3>
+									<p>Nos aseguraremos de ser un buen intermediario a la hora de cotizar y comprar medicamentos por internet.</p>
+								</div>
+							</div>
+						</div> <!-- .row -->
+					</div> <!-- .container -->
+				</div> <!-- .fullwidth-block -->
+
+				<div class="fullwidth-block" data-bg-color="#e6e6e6">
+					<div class="container">
+						<h2 class="section-title">Nuestro equipo</h2>
+
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="testimonial">
+									<img src="static/images/person-1.jpg" alt="" class="user-avatar">
+									<div class="testimonial-content">
+										<span class="meta"><strong>Julián Fuchslocher</strong>, <em>Ing. Eléctrico.</em></span>
+									</div>
+								</div>
+								<div class="testimonial">
+									<img src="static/images/person-3.jpg" alt="" class="user-avatar">
+									<div class="testimonial-content">
+										<span class="meta"><strong>Andrea Hernández</strong>, <em>Ing. Eléctrica.</em></span>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="testimonial">
+									<img src="static/images/person-2.jpg" alt="" class="user-avatar">
+									<div class="testimonial-content">
+										<span class="meta"><strong>Maximiliano Jones</strong>, <em>Ing. Eléctrico.</em></span>
+									</div>
+								</div>
+								<div class="testimonial">
+									<img src="static/images/person-4.jpg" alt="" class="user-avatar">
+									<div class="testimonial-content">
+										<span class="meta"><strong>José Musso</strong>, <em>Ing. Eléctrico.</em></span>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="testimonial">
+									<img src="static/images/person-3.jpg" alt="" class="user-avatar">
+									<div class="testimonial-content">
+										<span class="meta"><strong>Diego Wistuba</strong>, <em>Ing. Eléctrico.</em></span>
+									</div>
+								</div>
+							</div>
+						</div> <!-- .row -->
+					</div> <!-- .container -->
+				</div> <!-- .fullwidth-block -->
+
+				<div class="fullwidth-block">
+					<div class="container">
+						<h2 class="section-title">Hazte soci@</h2>
+
+						<div class="row">
+							<div class="col-sm-4">
+								<div class="pricing">
+									<div class="pricing-header">
+										<h3 class="pricing-title">Soci@ Estándar</h3>
+										<div class="price">
+											<span class="num"><sup>$</sup>5000<small>/ por mes</small></span>
+										</div>
+									</div>
+									<div class="pricing-checklist">
+										<ul>
+											<li class="check">Despacho a domicilio</li>
+											<li class="check">Soporte y garantía en la entrega</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div> <!-- .row -->
+					</div> <!-- .container -->
+				</div> <!-- .fullwidth-block -->
+
+				
+
+				<div class="fullwidth-block footer-cta" data-bg-image="static/images/footer-bg.jpg">
+					<div class="container">
+						<div class="hero-content">
+							<h1>Quieres saber más? <br><strong>Déjanos tu correo y nos pondremos en contacto</strong></h1>
+						</div>
+
+						<form class="subscribe-form">
+							<input type="text" placeholder="Ingresa tu  email...">
+							<input type="submit" value="No te quedes fuera">
+						</form>
+					</div>
+				</div>
+			</main> <!-- .main-content -->
+
+			<footer class="site-footer">
+				<div class="container">
+					<p>Copyright 2020 by SoloMedicamentos, Designed by Themezy. All rights reserved</p>
+
+					<div class="social-links">
+						<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+						<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+						<a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+						<a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script src="{{ url_for('static', filename='js/jquery-1.11.1.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/plugins.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+		<script type="text/javascript">
+			var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+		</script>
+	</body>
+
+</html>
